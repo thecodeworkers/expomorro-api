@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "name": "Pages",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Contenido": {
+      "type": "dynamiczone",
+      "components": [
+        "banners.banner",
+        "botoneria.boton",
+        "secciones.boton-texto",
+        "banners.banner-marca",
+        "formularios.contacto",
+        "banners.sponsor-banner",
+        "textos.promotional-text"
+      ]
+    },
+    "Nombre": {
+      "type": "string"
+    },
+    "URI": {
+      "type": "string"
+    }
+  }
+}

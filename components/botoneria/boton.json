@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_botoneria_botons",
+  "info": {
+    "name": "Boton",
+    "icon": "circle"
+  },
+  "options": {},
+  "attributes": {
+    "Posicion": {
+      "type": "integer"
+    },
+    "Texto": {
+      "type": "string"
+    },
+    "Link": {
+      "type": "string"
+    }
+  }
+}

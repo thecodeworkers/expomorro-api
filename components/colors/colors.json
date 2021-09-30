@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_colors_colors",
+  "info": {
+    "name": "Colors",
+    "icon": "cannabis"
+  },
+  "options": {},
+  "attributes": {
+    "Posicion": {
+      "type": "integer"
+    },
+    "Color": {
+      "type": "colorpicker",
+      "columnType": "longtext"
+    }
+  }
+}

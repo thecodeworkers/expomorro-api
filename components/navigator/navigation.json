@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_navigator_navigations",
+  "info": {
+    "name": "Navigation",
+    "icon": "grip-horizontal"
+  },
+  "options": {},
+  "attributes": {
+    "Posicion": {
+      "type": "integer"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "page": {
+      "model": "pages"
+    },
+    "SubNav": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigator.sub-nav"
+    }
+  }
+}

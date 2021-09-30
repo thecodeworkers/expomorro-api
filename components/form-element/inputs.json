@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_form_element_inputs",
+  "info": {
+    "name": "Inputs",
+    "icon": "angle-double-right"
+  },
+  "options": {},
+  "attributes": {
+    "Posicion": {
+      "type": "integer"
+    },
+    "Nombre": {
+      "type": "string"
+    },
+    "Placeholder": {
+      "type": "string"
+    }
+  }
+}

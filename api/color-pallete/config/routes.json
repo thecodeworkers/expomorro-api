@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/color-pallete",
+      "handler": "color-pallete.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/color-pallete",
+      "handler": "color-pallete.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/color-pallete",
+      "handler": "color-pallete.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

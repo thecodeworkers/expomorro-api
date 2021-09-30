@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_secciones_datos",
+  "info": {
+    "name": "Datos",
+    "icon": "atlas"
+  },
+  "options": {},
+  "attributes": {
+    "Posicion": {
+      "type": "integer"
+    },
+    "Titulo": {
+      "type": "string"
+    },
+    "informacion": {
+      "type": "text"
+    }
+  }
+}

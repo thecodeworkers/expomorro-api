@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "name": "Footer"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Copyright": {
+      "type": "text"
+    },
+    "Social": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigator.social"
+    }
+  }
+}

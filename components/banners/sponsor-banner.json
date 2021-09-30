@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_banners_sponsor_banners",
+  "info": {
+    "name": "SponsorBanner",
+    "icon": "award"
+  },
+  "options": {},
+  "attributes": {
+    "Posicion": {
+      "type": "integer"
+    },
+    "logos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

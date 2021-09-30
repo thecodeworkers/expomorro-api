@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_secciones_boton_textos",
+  "info": {
+    "name": "BotonTexto",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "Posicion": {
+      "type": "integer"
+    },
+    "Boton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "botoneria.boton"
+    },
+    "Titulo": {
+      "type": "string"
+    },
+    "Cuerpo": {
+      "type": "text"
+    }
+  }
+}

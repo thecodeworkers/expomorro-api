@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_textos_promotional_texts",
+  "info": {
+    "name": "promotionalText",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "Posicion": {
+      "type": "integer"
+    },
+    "texto": {
+      "type": "text"
+    }
+  }
+}

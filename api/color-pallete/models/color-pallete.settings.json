@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "color_palletes",
+  "info": {
+    "name": "Paleta de Colores",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Primary": {
+      "type": "colorpicker",
+      "columnType": "longtext"
+    },
+    "Secondary": {
+      "type": "colorpicker",
+      "columnType": "longtext"
+    },
+    "Complement": {
+      "type": "colorpicker",
+      "columnType": "longtext"
+    },
+    "Titles": {
+      "type": "colorpicker",
+      "columnType": "longtext"
+    },
+    "Body": {
+      "type": "colorpicker",
+      "columnType": "longtext"
+    }
+  }
+}
