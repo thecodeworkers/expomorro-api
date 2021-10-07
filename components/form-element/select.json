@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_form_element_selects",
+  "info": {
+    "name": "Select",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string"
+    },
+    "Valores": {
+      "type": "json"
+    },
+    "Posicion": {
+      "type": "integer"
+    },
+    "placeholder": {
+      "type": "text"
+    }
+  }
+}

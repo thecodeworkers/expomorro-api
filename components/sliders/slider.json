@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sliders_sliders",
+  "info": {
+    "name": "Slider",
+    "icon": "broom"
+  },
+  "options": {},
+  "attributes": {
+    "Slide": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

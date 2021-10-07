@@ -1,32 +1,31 @@
 {
   "collectionName": "components_formularios_contactos",
   "info": {
-    "name": "Contacto",
-    "icon": "address-card"
+    "name": "ContactoPuntos",
+    "icon": "address-card",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "Posicion": {
       "type": "integer"
     },
-    "Inputs": {
-      "type": "component",
-      "repeatable": true,
-      "component": "form-element.inputs"
-    },
-    "Titulo": {
-      "type": "string"
-    },
-    "Descripcion": {
-      "type": "string"
+    "formulario": {
+      "model": "formularios"
     },
     "Datos": {
       "type": "component",
       "repeatable": true,
       "component": "secciones.datos"
     },
-    "FootText": {
-      "type": "text"
+    "Titulo": {
+      "type": "string"
+    },
+    "Subtitulo": {
+      "type": "string"
+    },
+    "TextoPie": {
+      "type": "string"
     }
   }
 }

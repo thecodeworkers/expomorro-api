@@ -2,7 +2,8 @@
   "collectionName": "components_form_element_inputs",
   "info": {
     "name": "Inputs",
-    "icon": "angle-double-right"
+    "icon": "angle-double-right",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -14,6 +15,14 @@
     },
     "Placeholder": {
       "type": "string"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Input",
+        "Select",
+        "Textarea"
+      ]
     }
   }
 }
