@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "menus",
+  "info": {
+    "name": "Menu"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Navegacion": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigator.navigation"
+    },
+    "InformacionContacto": {
+      "type": "component",
+      "repeatable": false,
+      "component": "textos.informacion-de-contacto"
+    }
+  }
+}
