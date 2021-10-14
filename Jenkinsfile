@@ -26,8 +26,8 @@ pipeline {
       stage('Docker Build') {
         when {
           anyOf {
-            branch 'main'
-            branch 'dev'
+            expression {env.GIT_BRANCH == 'origin/main'}
+            expression {env.GIT_BRANCH == 'origin/dev'}
           }
         }
         steps {
