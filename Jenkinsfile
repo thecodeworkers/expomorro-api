@@ -25,7 +25,10 @@ pipeline {
       }
       stage('Docker Build') {
         when {
-          expression { BRANCH_NAME == 'dev' }
+          anyOf {
+            branch 'main'
+            branch 'dev'
+          }
         }
         steps {
           script {
