@@ -3,7 +3,7 @@ pipeline {
     stages {
       stage('Sonar Scanner') {
         steps {
-          withSonarQubeEnv() {
+          withSonarQubeEnv('Sonarqube TCW') {
             sh "${scannerHome}/bin/sonar-scanner"
           }
           timeout(time: 1, unit: 'HOURS') {
