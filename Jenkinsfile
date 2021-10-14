@@ -25,7 +25,7 @@ pipeline {
       }
       stage('Docker Build') {
         when {
-          branch 'dev'
+          environment name: 'BRANCH_NAME', value: 'dev'
         }
         steps {
           script {
