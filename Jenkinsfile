@@ -11,8 +11,6 @@ pipeline {
           }
         }
       }
-    }
-    stages {
       stage('Build Test') {
         steps {
           yarn 'install'
