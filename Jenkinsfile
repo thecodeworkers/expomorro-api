@@ -25,7 +25,7 @@ pipeline {
       }
       stage('Docker Build') {
         when {
-          environment name: 'BRANCH_NAME', value: 'dev'
+          expression { BRANCH_NAME ==~ /(dev|test)/ }
         }
         steps {
           script {
