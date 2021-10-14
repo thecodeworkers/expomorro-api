@@ -1,4 +1,10 @@
 pipeline {
+    environment {
+      registry = 'https://registry.thecodeworkers.com'
+      tag = 'registry.thecodeworkers.com/expomorro-api'
+      registryCredential = 'DockerRegistry'
+      dockerImage = ''
+    }
     agent any
     stages {
       stage('Sonar Scanner') {
@@ -15,6 +21,19 @@ pipeline {
         steps {
           yarn 'install'
           yarn 'build'
+        }
+      }
+      stage('Docker Build') {
+        when {
+          branch 'dev'
+        }
+        steps {
+          script {
+            docker.withRegistry(registry, registryCredential ) {
+              docker.build("expomorro-api:$BUILD_NUMBER", '-f dockerfile.prod').push()
+            }
+          }
+          sh "docker rmi $tag:$BUILD_NUMBER"
         }
       }
     }
