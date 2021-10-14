@@ -33,8 +33,8 @@ pipeline {
         steps {
           script {
             docker.withRegistry(registry, registryCredential ) {
-              docker.build("expomorro-api:$BUILD_NUMBER", '-f dockerfile.test ./').push()
-              docker.build("expomorro-api:latest", '-f dockerfile.test ./').push()
+              docker.build("expomorro-api:$BUILD_NUMBER", '-f Dockerfile.test ./').push()
+              docker.build("expomorro-api:latest", '-f Dockerfile.test ./').push()
             }
           }
           sh "docker rmi $tag:$BUILD_NUMBER"
