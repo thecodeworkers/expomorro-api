@@ -26,7 +26,7 @@ pipeline {
       stage('Docker Build') {
         when {
           anyOf {
-            expression {env.GIT_BRANCH == 'origin/main'}
+            expression {env.GIT_BRANCH == 'origin/test'}
             expression {env.GIT_BRANCH == 'origin/dev'}
           }
         }
@@ -34,10 +34,23 @@ pipeline {
           script {
             docker.withRegistry(registry, registryCredential ) {
               docker.build("expomorro-api:$BUILD_NUMBER", '-f Dockerfile.test ./').push()
-              docker.build("expomorro-api:latest", '-f Dockerfile.test ./').push()
+              docker.build("expomorro-api:latest-$DEPLOY_TO", '-f Dockerfile.test ./').push()
             }
           }
           sh "docker rmi $tag:$BUILD_NUMBER"
+          sh "docker rmi $tag:latest-$DEPLOY_TO"
+        }
+      }
+      stage('Kubernetes Deploy') {
+        when {
+          anyOf {
+            expression {env.GIT_BRANCH == 'origin/test'}
+            expression {env.GIT_BRANCH == 'origin/dev'}
+          }
+        }
+        steps {
+         sh "kubectl --token $API_TOKEN --server https://10.96.0.1 --insecure-skip-tls-verify=true delete -f ./scripts/$DEPLOY_TO | true"
+         sh "kubectl --token $API_TOKEN --server https://10.96.0.1 --insecure-skip-tls-verify=true apply -f ./scripts/$DEPLOY_TO"
         }
       }
     }

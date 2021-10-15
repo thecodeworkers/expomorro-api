@@ -1,0 +1,34 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: expomorro-dev-api
+  namespace: expomorro
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/cors-allow-credentials: "true"
+    nginx.ingress.kubernetes.io/cors-allow-headers: Authorization, origin, accept
+    nginx.ingress.kubernetes.io/cors-allow-methods: GET, OPTIONS, POST, PUT, DELETE
+    nginx.ingress.kubernetes.io/enable-cors: "true"
+    cert-manager.io/cluster-issuer: "letsencrypt-staging"
+    nginx.ingress.kubernetes.io/proxy-body-size: "0"
+    nginx.ingress.kubernetes.io/proxy-connect-timeout: "35000"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "35000"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "35000"
+    nginx.ingress.kubernetes.io/send-timeout: "35000"
+spec:
+  rules:
+    - host: expomorro-dev-api.thecodeworkers.com
+      http:
+        paths:
+          - pathType: Prefix
+            path: /
+            backend:
+              service:
+                name: expomorro-dev-api-service
+                port:
+                  number: 1337
+  tls:
+    - hosts:
+      - expomorro-dev-api.thecodeworkers.com
+      secretName: expomorro-dev-api-thecodeworkers-com-tls
+    - hosts:

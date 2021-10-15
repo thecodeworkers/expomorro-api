@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: expomorro-stg-api-service
+  namespace: expomorro
+  labels:
+    app: expomorro-stg-api
+spec:
+  ports:
+    - name: expomorro-stg-api
+      port: 1337
+  selector:
+    app: expomorro-stg-api
