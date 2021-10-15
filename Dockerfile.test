@@ -27,7 +27,6 @@ RUN adduser -S strapi -u 1001
 COPY --from=builder --chown=strapi:nodejs /app/build ./build
 COPY --from=builder --chown=strapi:nodejs /app/.cache ./.cache
 COPY --from=builder /app/.tmp ./.tmp
-COPY --from=builder /app/exports ./exports
 COPY --from=builder /app/.env ./.env
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
