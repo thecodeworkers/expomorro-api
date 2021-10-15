@@ -34,6 +34,7 @@ pipeline {
           }
         }
         steps {
+          sh "echo URL=https://expomorro-$DEPLOY_TO-api.thecodeworkers.com >> .env"
           script {
             docker.withRegistry(registry, registryCredential ) {
               docker.build("expomorro-api:$BUILD_NUMBER", '-f Dockerfile.test ./').push()
