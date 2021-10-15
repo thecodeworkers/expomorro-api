@@ -23,6 +23,7 @@ pipeline {
         steps {
           yarn 'install'
           yarn 'build'
+          sh 'rm -R node_modules'
         }
       }
       stage('Docker Build') {
