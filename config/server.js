@@ -5,5 +5,7 @@ module.exports = ({ env }) => ({
     auth: {
       secret: env('ADMIN_JWT_SECRET', '69dc992d3a0cdc3e3557fc313470dc9d'),
     },
+    autoOpen: false
   },
+  url: env('URL', 'https://expomorro-api.thecodeworkers.com'),
 })
