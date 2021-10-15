@@ -4,8 +4,10 @@ pipeline {
       tag = 'registry.thecodeworkers.com/expomorro-api'
       registryCredential = 'DockerRegistry'
       dockerImage = ''
+      API_TOKEN = credentials('kubernetesSecret')
     }
     agent any
+
     stages {
       stage('Sonar Scanner') {
         steps {
