@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_formularios_contactos",
+  "info": {
+    "name": "ContactoPuntos",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "position": {
+      "type": "integer"
+    },
+    "form": {
+      "model": "Formularios"
+    },
+    "data": {
+      "type": "component",
+      "repeatable": true,
+      "component": "secciones.datos"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "footerText": {
+      "type": "string"
+    }
+  }
+}

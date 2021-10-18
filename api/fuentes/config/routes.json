@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/fuentes",
+      "handler": "fuentes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/fuentes",
+      "handler": "fuentes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/fuentes",
+      "handler": "fuentes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
