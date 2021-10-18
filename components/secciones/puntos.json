@@ -10,7 +10,7 @@
     "position": {
       "type": "integer"
     },
-    "Type": {
+    "direction": {
       "type": "enumeration",
       "enum": [
         "vertical",
