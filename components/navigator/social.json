@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_navigator_socials",
+  "info": {
+    "name": "Social",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "position": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

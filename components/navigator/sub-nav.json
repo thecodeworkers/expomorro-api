@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_navigator_sub_navs",
+  "info": {
+    "name": "SubNav",
+    "icon": "align-right"
+  },
+  "options": {},
+  "attributes": {
+    "position": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "page": {
+      "model": "pages"
+    }
+  }
+}

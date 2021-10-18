@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "headers",
+  "info": {
+    "name": "Header",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "navigation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigator.navigation"
+    },
+    "social": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigator.social"
+    }
+  }
+}

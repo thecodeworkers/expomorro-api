@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_secciones_datos",
+  "info": {
+    "name": "Datos",
+    "icon": "atlas",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "position": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "information": {
+      "type": "text"
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_banners_banner_marcas",
+  "info": {
+    "name": "BannerMarca",
+    "icon": "archway",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Marca": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.banner"
+    },
+    "Posicion": {
+      "type": "integer"
+    }
+  }
+}
