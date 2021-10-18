@@ -19,6 +19,18 @@
       "required": false,
       "pluginOptions": {}
     },
+    "imageResponsive": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
     "position": {
       "type": "integer"
     },

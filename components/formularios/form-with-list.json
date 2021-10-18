@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_formularios_contactos",
+  "collectionName": "components_formularios_form_with_list",
   "info": {
-    "name": "ContactoPuntos",
+    "name": "Formulario con lista",
     "icon": "address-card",
     "description": ""
   },
@@ -13,10 +13,10 @@
     "form": {
       "model": "Formularios"
     },
-    "data": {
+    "points": {
       "type": "component",
       "repeatable": true,
-      "component": "secciones.datos"
+      "component": "secciones.puntos"
     },
     "title": {
       "type": "string"

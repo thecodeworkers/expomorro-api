@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_secciones_datos",
+  "collectionName": "components_secciones_puntos",
   "info": {
-    "name": "Datos",
+    "name": "Puntos",
     "icon": "atlas",
     "description": ""
   },
@@ -10,10 +10,17 @@
     "position": {
       "type": "integer"
     },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "vertical",
+        "horizontal"
+      ]
+    },
     "title": {
       "type": "string"
     },
-    "information": {
+    "description": {
       "type": "text"
     },
     "icon": {
