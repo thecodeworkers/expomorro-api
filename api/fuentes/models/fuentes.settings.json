@@ -11,7 +11,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "titles": {
+    "normal": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -23,7 +23,19 @@
       "required": false,
       "pluginOptions": {}
     },
-    "subtitles": {
+    "bold": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "slow": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
