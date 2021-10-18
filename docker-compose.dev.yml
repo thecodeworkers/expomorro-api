@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  expomorro-api:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: expomorro-api
+    restart: unless-stopped
+    tty: true
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+    environment:
+      DATABASE_CLIENT: mysql
+      DATABASE_HOST: mariadb
+      DATABASE_PORT: 3306
+      DATABASE_NAME: expomorro
+      DATABASE_USERNAME: expomorro
+      DATABASE_PASSWORD: expomorro
+      DATABASE_SSL: 'false'
+    ports:
+      - '1337:1337'
+    depends_on:
+      - mariadb
+    command: yarn develop
+
+  mariadb:
+    image: mariadb
+    volumes:
+      - ./data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: expomorro
+      MYSQL_DATABASE: expomorro
+      MYSQL_USER: expomorro
+      MYSQL_PASSWORD: expomorro
