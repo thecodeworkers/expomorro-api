@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_form_elements_inputs",
+  "info": {
+    "name": "Input",
+    "icon": "arrow-alt-circle-right"
+  },
+  "options": {},
+  "attributes": {
+    "position": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "string"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "text",
+        "textArea",
+        "password"
+      ]
+    }
+  }
+}
