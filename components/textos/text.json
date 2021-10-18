@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_textos_promotional_texts",
+  "collectionName": "components_textos_text",
   "info": {
-    "name": "promotionalText",
+    "name": "text",
     "icon": "align-center"
   },
   "options": {},

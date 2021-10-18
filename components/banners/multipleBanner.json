@@ -1,18 +1,18 @@
 {
-  "collectionName": "components_banners_banner_marcas",
+  "collectionName": "components_banners_multiple_banner",
   "info": {
-    "name": "BannerMarca",
+    "name": "multipleBanner",
     "icon": "archway",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "Marca": {
+    "images": {
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "banners.banner"
     },
-    "Posicion": {
+    "position": {
       "type": "integer"
     }
   }

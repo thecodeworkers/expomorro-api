@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "pages",
   "info": {
-    "name": "Paginas"
+    "name": "Paginas",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -19,7 +20,16 @@
     },
     "content": {
       "type": "dynamiczone",
-      "components": []
+      "components": [
+        "banners.multiplebanner",
+        "banners.banner",
+        "botoneria.boton",
+        "formularios.form-with-list",
+        "textos.text",
+        "secciones.boton-texto",
+        "secciones.puntos",
+        "sliders.slider"
+      ]
     }
   }
 }
