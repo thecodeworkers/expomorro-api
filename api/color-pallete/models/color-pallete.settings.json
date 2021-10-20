@@ -8,27 +8,39 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "Primary": {
+    "primary": {
       "type": "colorpicker",
       "columnType": "longtext"
     },
-    "Secondary": {
+    "secondary": {
       "type": "colorpicker",
       "columnType": "longtext"
     },
-    "Complement": {
+    "complement": {
       "type": "colorpicker",
       "columnType": "longtext"
     },
-    "Titles": {
+    "titles": {
       "type": "colorpicker",
       "columnType": "longtext"
     },
-    "Body": {
+    "body": {
+      "type": "colorpicker",
+      "columnType": "longtext"
+    },
+    "footer": {
+      "type": "colorpicker",
+      "columnType": "longtext"
+    },
+    "contrast": {
+      "type": "colorpicker",
+      "columnType": "longtext"
+    },
+    "menuText": {
       "type": "colorpicker",
       "columnType": "longtext"
     }
