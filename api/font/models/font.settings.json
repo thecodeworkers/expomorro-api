@@ -11,18 +11,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "normal": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
     "bold": {
       "model": "file",
       "via": "related",
@@ -35,7 +23,19 @@
       "required": false,
       "pluginOptions": {}
     },
-    "slow": {
+    "normal": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "slim": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
