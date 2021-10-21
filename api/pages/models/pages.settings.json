@@ -28,7 +28,8 @@
         "textos.text",
         "secciones.boton-texto",
         "secciones.puntos",
-        "sliders.slider"
+        "sliders.slider",
+        "secciones.servicios"
       ]
     }
   }
