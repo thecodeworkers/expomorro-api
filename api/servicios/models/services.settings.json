@@ -1,8 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "servicios",
+  "collectionName": "services",
   "info": {
-    "name": "Servicios"
+    "name": "Services",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Icono": {
+    "icon": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -23,10 +24,10 @@
       "required": false,
       "pluginOptions": {}
     },
-    "Titulo": {
+    "title": {
       "type": "string"
     },
-    "Descripcion": {
+    "description": {
       "type": "richtext"
     }
   }

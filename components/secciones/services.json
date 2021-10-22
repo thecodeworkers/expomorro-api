@@ -1,14 +1,14 @@
 {
   "collectionName": "components_secciones_servicios",
   "info": {
-    "name": "Servicios",
+    "name": "Services",
     "icon": "align-left",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "servicios": {
-      "collection": "servicios"
+    "services": {
+      "collection": "services"
     }
   }
 }
