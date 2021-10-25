@@ -11,7 +11,7 @@
       "type": "integer"
     },
     "form": {
-      "model": "Formularios"
+      "model": "forms"
     },
     "points": {
       "type": "component",
