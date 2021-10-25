@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_secciones_colum_texts",
+  "info": {
+    "name": "ColumTexts",
+    "icon": "grip-lines-vertical",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "visible": {
+      "type": "boolean"
+    },
+    "position": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description1": {
+      "type": "richtext"
+    },
+    "description2": {
+      "type": "richtext"
+    }
+  }
+}
