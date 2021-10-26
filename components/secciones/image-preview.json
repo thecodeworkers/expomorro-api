@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_secciones_image_previews",
+  "info": {
+    "name": "Image Preview",
+    "icon": "film"
+  },
+  "options": {},
+  "attributes": {
+    "visible": {
+      "type": "boolean"
+    },
+    "position": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "richtext"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "responsive": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

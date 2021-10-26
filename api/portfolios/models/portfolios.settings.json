@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portfolios",
+  "info": {
+    "name": "Portfolios",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "uri": {
+      "type": "string"
+    },
+    "fields": {
+      "type": "dynamiczone",
+      "components": [
+        "banners.banner",
+        "secciones.colum-texts",
+        "secciones.image-preview",
+        "sliders.slider",
+        "textos.text"
+      ]
+    },
+    "outstanding": {
+      "type": "boolean",
+      "required": false,
+      "default": false
+    },
+    "events": {
+      "type": "string",
+      "default": "Ve nuestros demás eventos"
+    }
+  }
+}
