@@ -27,6 +27,15 @@
         "sliders.slider",
         "textos.text"
       ]
+    },
+    "outstanding": {
+      "type": "boolean",
+      "required": false,
+      "default": false
+    },
+    "events": {
+      "type": "string",
+      "default": "Ve nuestros demás eventos"
     }
   }
 }
