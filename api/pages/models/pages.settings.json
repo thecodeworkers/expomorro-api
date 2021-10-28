@@ -21,15 +21,13 @@
     "content": {
       "type": "dynamiczone",
       "components": [
-        "banners.multiplebanner",
         "banners.banner",
-        "botoneria.boton",
-        "formularios.form-with-list",
-        "textos.text",
         "secciones.boton-texto",
         "secciones.puntos",
-        "sliders.slider",
-        "secciones.services"
+        "secciones.description-with-list",
+        "secciones.great-icon-list",
+        "secciones.image-preview",
+        "secciones.image-with-icon-list"
       ]
     }
   }

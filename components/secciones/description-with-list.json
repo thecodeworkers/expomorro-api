@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_secciones_description_with_lists",
+  "info": {
+    "name": "Description with List",
+    "icon": "chevron-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "position": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "point": {
+      "type": "component",
+      "repeatable": true,
+      "component": "secciones.puntos"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

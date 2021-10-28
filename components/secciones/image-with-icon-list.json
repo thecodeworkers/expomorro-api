@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_secciones_image_with_icon_lists",
+  "info": {
+    "name": "Image with Icon List",
+    "icon": "digital-tachograph",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "outstanding": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "title": {
+      "type": "string",
+      "default": "Conoce a la master mind de Expomorro"
+    },
+    "values": {
+      "type": "component",
+      "repeatable": true,
+      "component": "secciones.great-icon-list"
+    },
+    "responsive": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "position": {
+      "type": "integer"
+    }
+  }
+}
