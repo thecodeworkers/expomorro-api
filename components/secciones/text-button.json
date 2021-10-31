@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_secciones_text_buttons",
+  "info": {
+    "name": "TextButton",
+    "icon": "grip-lines",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "position": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "text"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "botoneria.boton"
+    },
+    "body": {
+      "type": "richtext"
+    }
+  }
+}

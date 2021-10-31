@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_textos_events",
+  "info": {
+    "name": "event",
+    "icon": "signature"
+  },
+  "options": {},
+  "attributes": {
+    "position": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "richtext",
+      "default": "Ve nuestros demás eventos"
+    }
+  }
+}

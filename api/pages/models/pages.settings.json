@@ -29,7 +29,10 @@
         "secciones.boton-texto",
         "secciones.puntos",
         "sliders.slider",
-        "secciones.services"
+        "secciones.services",
+        "secciones.colum-texts",
+        "secciones.text-button",
+        "secciones.image-preview"
       ]
     }
   }
