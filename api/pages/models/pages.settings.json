@@ -27,7 +27,22 @@
         "secciones.description-with-list",
         "secciones.great-icon-list",
         "secciones.image-preview",
-        "secciones.image-with-icon-list"
+        "secciones.image-with-icon-list",
+        "sliders.slider",
+        "secciones.services",
+        "secciones.colum-texts",
+        "secciones.text-button",
+        "banners.multiplebanner",
+        "botoneria.boton",
+        "navigator.social",
+        "navigator.navigation",
+        "navigator.sub-nav",
+        "formularios.form-with-list",
+        "textos.text",
+        "textos.event",
+        "form-elements.select",
+        "form-elements.input",
+        "colors.colors"
       ]
     }
   }
