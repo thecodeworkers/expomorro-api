@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_sliders_portfolio_sliders",
+  "info": {
+    "name": "PortfolioSlider",
+    "icon": "backward"
+  },
+  "options": {},
+  "attributes": {
+    "portfolios": {
+      "collection": "portfolios"
+    }
+  }
+}
