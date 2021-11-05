@@ -36,6 +36,21 @@
     "events": {
       "type": "string",
       "default": "Ve nuestros demás eventos"
+    },
+    "principalImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "text"
     }
   }
 }

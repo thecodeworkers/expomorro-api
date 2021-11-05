@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_secciones_portfolio_outstandings",
+  "info": {
+    "name": "PortfolioOutstanding",
+    "icon": "bacon",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "position": {
+      "type": "integer"
+    }
+  }
+}
