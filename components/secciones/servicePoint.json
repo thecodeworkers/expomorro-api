@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_secciones_servicesPoint",
+  "info": {
+    "name": "ServicePoint",
+    "icon": "angle-double-left"
+  },
+  "options": {},
+  "attributes": {
+    "service": {
+      "model": "services"
+    },
+    "where": {
+      "type": "integer"
+    }
+  }
+}

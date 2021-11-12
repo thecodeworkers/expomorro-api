@@ -7,8 +7,13 @@
   },
   "options": {},
   "attributes": {
-    "services": {
-      "collection": "services"
+    "service": {
+      "type": "component",
+      "repeatable": true,
+      "component": "secciones.servicepoint"
+    },
+    "position": {
+      "type": "integer"
     }
   }
 }
