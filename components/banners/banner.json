@@ -36,6 +36,16 @@
     },
     "fullWidth": {
       "type": "boolean"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "image",
+        "video",
+        "lottie"
+      ],
+      "required": true,
+      "default": "image"
     }
   }
 }
