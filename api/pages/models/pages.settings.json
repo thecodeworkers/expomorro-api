@@ -44,7 +44,9 @@
         "form-elements.input",
         "colors.colors",
         "sliders.portfolio-slider",
-        "secciones.portfolio-outstanding"
+        "secciones.portfolio-outstanding",
+        "secciones.event-list",
+        "secciones.title-with-button"
       ]
     }
   }

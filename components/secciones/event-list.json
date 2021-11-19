@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_secciones_event_lists",
+  "info": {
+    "name": "EventList",
+    "icon": "book-open"
+  },
+  "options": {},
+  "attributes": {
+    "position": {
+      "type": "integer"
+    },
+    "fullList": {
+      "type": "boolean"
+    }
+  }
+}
