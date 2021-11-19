@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_secciones_title_with_buttons",
+  "info": {
+    "name": "TitleWithButton",
+    "icon": "comment-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "botoneria.boton"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "position": {
+      "type": "integer"
+    }
+  }
+}
