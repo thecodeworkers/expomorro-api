@@ -33,6 +33,14 @@
       }
     },
     {
+      "method": "POST",
+      "path": "/forms/sendmail",
+      "handler": "forms.sendmail",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "PUT",
       "path": "/forms/:id",
       "handler": "forms.update",
