@@ -18,14 +18,16 @@
     "uri": {
       "type": "string"
     },
-    "fields": {
+    "content": {
       "type": "dynamiczone",
       "components": [
         "banners.banner",
         "secciones.colum-texts",
         "secciones.image-preview",
         "sliders.slider",
-        "textos.text"
+        "textos.text",
+        "secciones.event-list",
+        "sliders.event-galery"
       ]
     },
     "outstanding": {
