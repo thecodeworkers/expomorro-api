@@ -31,4 +31,3 @@ spec:
     - hosts:
       - admin.expomorro.theempire.tech
       secretName: expomorro-stg-api-thecodeworkers-com-tls
-    - hosts:
