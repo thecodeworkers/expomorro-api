@@ -7,5 +7,5 @@ module.exports = ({ env }) => ({
     },
     autoOpen: false
   },
-  url: env('URL', 'https://expomorro-api.thecodeworkers.com'),
+  url: env('URL', 'https://admin.expomorro.theempire.tech'),
 })

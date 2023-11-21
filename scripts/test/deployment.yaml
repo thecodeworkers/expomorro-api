@@ -20,7 +20,7 @@ spec:
       containers:
         - name: expomorro-stg-api
           imagePullPolicy: Always
-          image: registry.thecodeworkers.com/expomorro-api:latest-test
+          image: registry.teempire.tech/expomorro-api:latest-test
           ports:
             - name: http-port
               containerPort: 1337
